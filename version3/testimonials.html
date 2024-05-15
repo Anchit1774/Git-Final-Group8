@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .testimonial {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+        .testimonial:hover {
+            transform: translateY(-10px);
+        }
+        .testimonial p {
+            font-size: 1em;
+            color: #555;
+        }
+        .testimonial .author {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .testimonial .position {
+            font-size: 0.9em;
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            .testimonial {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .testimonial {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Testimonials</h1>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Working with you has been an absolute pleasure. Your dedication and skill are evident in every project you undertake."</p>
+                <div class="author">John Doe</div>
+                <div class="position">CEO, Company XYZ</div>
+            </div>
+            <div class="testimonial">
+                <p>"Your innovative approach and attention to detail have greatly contributed to our success. Thank you for your hard work."</p>
+                <div class="author">Jane Smith</div>
+                <div class="position">Marketing Director, ABC Corp</div>
+            </div>
+            <div class="testimonial">
+                <p>"I highly recommend your services to anyone looking for top-notch results. Your professionalism and expertise are unparalleled."</p>
+                <div class="author">Bob Johnson</div>
+                <div class="position">Project Manager, Tech Solutions</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
